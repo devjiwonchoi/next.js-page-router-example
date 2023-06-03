@@ -3,13 +3,29 @@ export default function MiddlewareMatcherExampleIndex() {
   return (
     <div>
       <h1>This is the Middleware Matcher Example Page.</h1>
-      <Link
-        as='/middleware-matcher-segment'
-        href='/middleware-matcher-example/redirect-to-root-from-link'
+      <div
+        style={{
+          marginBottom: '2rem',
+        }}
       >
-        Click This!
-      </Link>
-      {/* <Link href='/'>Click This!</Link> */}
+        <Link
+          as='/middleware-matcher-segment'
+          href='/middleware-matcher-example/redirect-to-root-from-link'
+        >
+          <h2>Go to `Redirect to root from link`</h2>
+        </Link>
+        <p>
+          http://localhost:3000/middleware-matcher-example/redirect-to-root-from-link
+        </p>
+      </div>
+      <div>
+        <Link href='/middleware-matcher-example/redirect-to-root-by-middleware'>
+          <h2>Go to `Redirect to root by middleware`</h2>
+        </Link>
+        <p>
+          http://localhost:3000/middleware-matcher-example/redirect-to-root-by-middleware
+        </p>
+      </div>
     </div>
   )
 }
