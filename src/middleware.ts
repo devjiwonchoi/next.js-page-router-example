@@ -6,5 +6,8 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: '/middleware-matcher-segment',
+  matcher: [
+    '/middleware-matcher-segment',
+    '/middleware-matcher-example/redirect-to-root-by-middleware',
+  ],
 }
